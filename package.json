@@ -1,0 +1,28 @@
+{
+  "name": "project_binarysearchtree",
+  "version": "1.0.0",
+  "description": "Binary Search Tree implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noOdin1/project_BinarySearchTree.git"
+  },
+  "keywords": [
+    "Binary",
+    "Search",
+    "Tree"
+  ],
+  "author": "noOdin1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noOdin1/project_BinarySearchTree/issues"
+  },
+  "homepage": "https://github.com/noOdin1/project_BinarySearchTree#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.29.5",
+    "jest": "^30.4.2"
+  }
+}
