@@ -74,6 +74,18 @@ class Tree {
     return false;
   }
 
+
+  // function that returns true or false on whether a value is
+  // on the tree
+  includes(value) {
+    let tmpNode = this.rootNode;
+    // console.dir(tmpNode, { depth: null });
+    if (this.searchNode(tmpNode, value)) {
+      console.log("Value exist on the tree");
+    } else {
+      console.log("Value does not exist on the tree");
+    }
+  }
 }
 
 export { Node, Tree };
