@@ -43,6 +43,23 @@ class Tree {
     // this.prettyPrint(this.rootNode);
   }
 
+  binarySearchTree(array) {
+    let mpnt = Math.floor(array.length / 2);
+
+    if (array.length == 0) {
+      return null;
+    }
+    // if (array.length == 1) {
+    //   return new Node(array[0]);
+    // }
+    let rootNode = new Node(array[mpnt]);
+    rootNode.leftNode = this.binarySearchTree(array.slice(0, mpnt));
+    rootNode.rightNode = this.binarySearchTree(
+      array.slice(mpnt + 1, array.length),
+    );
+    return rootNode;
+  }
+
 }
 
 export { Node, Tree };
