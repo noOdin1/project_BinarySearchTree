@@ -1,4 +1,5 @@
 /* binary_search_tree.js */
+import { merge_sort } from "./merge_sort_recursion.js";
 
 /* class definition for a node point for this project */
 class Node {
