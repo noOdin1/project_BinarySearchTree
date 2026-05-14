@@ -60,6 +60,20 @@ class Tree {
     return rootNode;
   }
 
+
+
+  searchNode(node, value) {
+    if (node == null) return false;
+
+    console.log(`node value: ${node.val}, value: ${value}`);
+    if (node.val == value) {
+      return true;
+    }
+    if (this.searchNode(node.leftNode, value) == true) return true;
+    if (this.searchNode(node.rightNode, value) == true) return true;
+    return false;
+  }
+
 }
 
 export { Node, Tree };
