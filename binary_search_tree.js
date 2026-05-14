@@ -33,6 +33,16 @@ class Tree {
     );
   }
 
+  buildTree(array) {
+    // From the argument array, it will be sorted and filtered to have only
+    //   unique values
+    this.rootNode = this.binarySearchTree(
+      Array.from(new Set(merge_sort(array))),
+    );
+    // console.dir(this.rootNode, { depth: null });
+    // this.prettyPrint(this.rootNode);
+  }
+
 }
 
 export { Node, Tree };
