@@ -81,6 +81,11 @@ class Tree {
     return node.leftNode === null ? node : this.minValue(node.leftNode);
   }
 
+  // find the maximum value
+  maxValue(node = this.rootNode) {
+    return node.rightNode === null ? node : this.maxValue(node.rightNode);
+  }
+
   // function that returns true or false on whether a value is
   // on the tree
   includes(value) {
