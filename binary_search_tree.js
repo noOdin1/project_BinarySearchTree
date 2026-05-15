@@ -75,6 +75,12 @@ class Tree {
   }
 
 
+
+  // find min value of a tree
+  minValue(node = this.rootNode) {
+    return node.leftNode === null ? node : this.minValue(node.leftNode);
+  }
+
   // function that returns true or false on whether a value is
   // on the tree
   includes(value) {
